@@ -3,21 +3,41 @@ import { Menu } from "@/types/menu";
 const menuData: Menu[] = [
   {
     id: 1,
-    title: "Home",
+    title: "TRANG CHỦ",
     newTab: false,
     path: "/",
   },
   {
     id: 2,
-    title: "Features",
+    title: "VỀ CHÚNG TÔI",
     newTab: false,
-    path: "/#features",
+    path: "/ve-chung-toi",
   },
   {
     id: 2.1,
-    title: "Blog",
+    title: "PHONG THỦY",
     newTab: false,
-    path: "/blog",
+    path: "/phong-thuy",
+    submenu: [
+      {
+        id: 31,
+        title: "Quy trình thực hiện hồ sơ tiêu chí phong thủy",
+        newTab: false,
+        path: "/phong-thuy/ho-so-tieu-chi",
+      },
+      {
+        id: 34,
+        title: "Quy trình thiết kế mặt bằng chuẩn phong thủy hợp công năng",
+        newTab: false,
+        path: "/auth/signin",
+      },
+      {
+        id: 35,
+        title: "Quy trình thiết kế bản vẽ thi công nhà đẹp chuẩn phong thủy",
+        newTab: false,
+        path: "/auth/signup",
+      },
+    ],
   },
   {
     id: 2.3,
@@ -29,6 +49,7 @@ const menuData: Menu[] = [
     id: 3,
     title: "Pages",
     newTab: false,
+    path: "/blog",
     submenu: [
       {
         id: 31,

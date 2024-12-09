@@ -14,7 +14,6 @@ const Header = () => {
 
   const pathUrl = usePathname();
 
-
   // Sticky menu
   const handleStickyMenu = () => {
     if (window.scrollY >= 80) {
@@ -37,7 +36,7 @@ const Header = () => {
       }`}
     >
       <div className="relative mx-auto items-center justify-between ">
-      <div className="flex justify-between md:justify-center mb-3 px-4 md:px-8 2xl:px-0">
+        <div className="mb-3 flex justify-between px-4 md:justify-center md:px-8 2xl:px-0">
           <a href="/">
             <Image
               src="/images/logo/logo-dark.svg"
@@ -98,7 +97,7 @@ const Header = () => {
 
         {/* Nav Menu Start   */}
         <div
-          className={`bg-blue_main    invisible h-0 w-full items-center justify-center xl:visible xl:flex xl:h-auto xl:w-full  md:px-8 2xl:px-0 ${
+          className={`invisible    h-0 w-full items-center justify-center bg-blue_main md:px-8 xl:visible xl:flex xl:h-auto  xl:w-full 2xl:px-0 ${
             navigationOpen &&
             "navbar !visible mt-4 h-auto max-h-[400px] rounded-md  p-7.5 shadow-solid-5 dark:bg-blacksection xl:h-auto xl:p-0 xl:shadow-none xl:dark:bg-transparent"
           }`}
@@ -106,16 +105,25 @@ const Header = () => {
           <nav>
             <ul className="flex flex-col gap-5 xl:flex-row xl:items-center xl:gap-10">
               {menuData.map((menuItem, key) => (
-                <li key={key}  className={`px-4 py-3 text-white ${menuItem.submenu ? "group relative" : ""} ${ pathUrl === menuItem.path
-                  ? "text-white  bg-red_main"
-                  : "hover:bg-red_main"}`}>
+                <li
+                  key={key}
+                  className={`px-4 py-3 text-white ${
+                    menuItem.submenu ? "group relative" : ""
+                  } ${
+                    pathUrl === menuItem.path
+                      ? "bg-red_main  text-white"
+                      : "hover:bg-red_main"
+                  }`}
+                >
                   {menuItem.submenu ? (
                     <>
                       <button
                         onClick={() => setDropdownToggler(!dropdownToggler)}
-                        className="flex cursor-pointer items-center justify-between gap-3  "
+                        className="flex cursor-pointer items-center gap-3  w-full"
                       >
-                        {menuItem.title}
+                        <Link href={menuItem.path || "#"}>
+                          {menuItem.title}
+                        </Link>
                         <span>
                           <svg
                             className="h-3 w-3 cursor-pointer fill-white"
@@ -128,7 +136,9 @@ const Header = () => {
                       </button>
 
                       <ul
-                        className={`dropdown bg-gray_main text-blue_main ${dropdownToggler ? "flex" : ""}`}
+                        className={`dropdown bg-gray_main text-blue_main ${
+                          dropdownToggler ? "flex" : ""
+                        }`}
                       >
                         {menuItem.submenu.map((item, key) => (
                           <li key={key} className="">
@@ -138,10 +148,7 @@ const Header = () => {
                       </ul>
                     </>
                   ) : (
-                    <Link
-                      href={`${menuItem.path}`}
-                      className=""
-                    >
+                    <Link href={`${menuItem.path}`} className="">
                       {menuItem.title}
                     </Link>
                   )}
@@ -149,8 +156,6 @@ const Header = () => {
               ))}
             </ul>
           </nav>
-
-
         </div>
       </div>
     </header>

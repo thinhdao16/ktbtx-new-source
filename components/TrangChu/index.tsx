@@ -4,17 +4,17 @@ import GiveContact from "../GiveContact";
 function TrangChu() {
   return (
     <div className="">
-      <div className="bg-cotain relative flex h-screen flex-col items-center justify-center bg-[url('/images/trangchu/main.jpg')] bg-center">
+      <div className="bg-cotain relative flex h-[30vh] md:h-screen flex-col items-center justify-center bg-[url('/images/trangchu/main.jpg')] bg-center">
         <div className="absolute inset-0 bg-black opacity-30"></div>
         <div className="relative z-10 flex flex-col items-center gap-6">
-          <span className="w-7/12 text-center text-7xl font-semibold text-white">
+          <span className="w-3/4 md:w-7/12 text-center text-xl md:text-7xl font-semibold text-white">
             THIẾT KẾ NHÀ Ở CHUẨN PHONG THỦY
           </span>
           <div className="flex gap-8">
-            <button className="bg-red_main px-11 py-3 text-2xl font-semibold text-white">
+            <button className="bg-red_main px-11 py-3 text-lg md:text-2xl font-semibold text-white">
               TƯ VẤN
             </button>
-            <button className="bg-white px-11 py-3 text-2xl font-semibold text-red_main">
+            <button className="bg-white px-11 py-3 text-lg md:text-2xl font-semibold text-red_main">
               BẢNG GIÁ
             </button>
           </div>
@@ -23,7 +23,7 @@ function TrangChu() {
       <div className="mx-auto max-w-c-1154 px-4 py-10 md:px-8 2xl:px-0">
         <div className="grid grid-cols-1 gap-15 py-8 md:grid-cols-2">
           <div className="flex flex-col pr-0 md:pr-10">
-            <span className="text-3xl font-semibold text-red_main">
+            <span className="text-4xl font-medium text-red_main">
               GIỚI THIỆU VỀ
             </span>
             <span className="pt-2 text-5xl font-semibold text-blue_main">

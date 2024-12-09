@@ -1,7 +1,9 @@
 import React from "react";
-import PropTypes from "prop-types";
+
 import "./style.css";
+
 function GiveContact() {
+
   return (
     <div className="background-image">
       <div className="mx-auto max-w-c-1154 px-4 py-20 md:px-8 2xl:px-0">
@@ -62,7 +64,9 @@ function GiveContact() {
               ></textarea>
             </div>
             <div className="grid grid-cols-2 justify-between">
-              <div></div>
+              <div>
+                recaptcha
+              </div>
               <div className="text-end">
                 <button className="text-md bg-blue_main px-6 py-1.5 text-white">
                   GỬI YÊU CẦU

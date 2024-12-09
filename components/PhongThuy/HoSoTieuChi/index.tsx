@@ -22,13 +22,13 @@ function HoSoTieuChi() {
           {steps.map((step, i) => (
             <div>
               <div className="grid grid-cols-11 items-center">
-                <div className="col-span-2 text-xl font-semibold text-red_main md:col-span-1 md:text-3xl">
+                <div className="col-span-2 text-lg font-semibold text-red_main md:col-span-1 md:text-3xl">
                   {step.head}
                 </div>
                 <div className="col-span-1 flex justify-center">
                   <div className=" h-3 w-3 rounded-full bg-red_main"></div>
                 </div>
-                <div className="col-span-8 text-xl font-semibold text-red_main md:col-span-9 md:text-3xl ">
+                <div className="col-span-8 text-lg font-semibold text-red_main md:col-span-9 md:text-3xl ">
                   {step.title}
                 </div>
               </div>
@@ -48,7 +48,7 @@ function HoSoTieuChi() {
                       paddingLeft: 0,
                       paddingTop: 0,
                       paddingBottom: 0,
-                      height: "108%",
+                      height: "110%",
                     }}
                   >
                     {""}

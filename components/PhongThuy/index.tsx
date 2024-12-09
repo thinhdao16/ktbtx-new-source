@@ -1,6 +1,5 @@
 import React from "react";
 import HeaderBanner from "../Header/Banner";
-import Link from "next/link";
 import GiveContactEmail from "../GiveContactEmail";
 import QuyTrinh from "./components/QuyTrinh";
 

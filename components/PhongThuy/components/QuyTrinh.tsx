@@ -6,7 +6,7 @@ function QuyTrinh() {
     <div className="grid grid-cols-1 gap-8 md:grid-cols-3 md:gap-18">
       <Link href="/phong-thuy/ho-so-tieu-chi">
         <img
-          src="images/phongthuy/ho-so-tieu-chi.jpg"
+          src="/images/phongthuy/ho-so-tieu-chi.jpg"
           alt="error"
           className="rounded-6xl aspect-square object-cover "
         />
@@ -21,7 +21,7 @@ function QuyTrinh() {
       </Link>
       <Link href="/phong-thuy/ban-ve-thi-cong">
         <img
-          src="images/phongthuy/ban-ve-thi-cong.jpg"
+          src="/images/phongthuy/ban-ve-thi-cong.jpg"
           alt="error"
           className="rounded-6xl aspect-square object-cover "
         />
@@ -36,7 +36,7 @@ function QuyTrinh() {
       </Link>
       <Link href="/phong-thuy/mat-bang-chuan">
         <img
-          src="images/phongthuy/mat-bang-chuan.jpg"
+          src="/images/phongthuy/mat-bang-chuan.jpg"
           alt="error"
           className="rounded-6xl aspect-square object-cover "
         />

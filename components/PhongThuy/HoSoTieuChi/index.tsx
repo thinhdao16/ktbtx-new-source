@@ -1,6 +1,8 @@
 import HeaderBanner from "@/components/Header/Banner";
 import React from "react";
 import { steps } from "./data";
+import QuyTrinh from "../components/QuyTrinh";
+import GiveContactEmail from "@/components/GiveContactEmail";
 
 function HoSoTieuChi() {
   return (
@@ -67,6 +69,13 @@ function HoSoTieuChi() {
           ))}
         </div>
       </div>
+      <div className="bg-gray_main">
+        <div className="mx-auto max-w-c-1154 px-4 py-10 md:px-8 2xl:px-0">
+          <div className="text-xl md:text-3xl text-center font-semibold text-red_main pb-5">CÁC QUY TRÌNH KHÁC</div>
+          <QuyTrinh/>
+        </div>
+      </div>
+      <GiveContactEmail/>
     </div>
   );
 }

@@ -2,9 +2,9 @@ import { Metadata } from "next";
 import TrangChu from "@/components/TrangChu";
 
 export const metadata: Metadata = {
-  title: "Next.js Starter Template for SaaS Startups - Solid SaaS Boilerplate",
-  description: "This is Home for Solid Pro",
-  // other metadata
+  title: "Kiến trúc Bầu Trời Xanh",
+  description:
+    "Khám phá những giải pháp thiết kế kiến trúc độc đáo, hiện đại và phù hợp với phong thủy tại Kiến Trúc Bầu Trời Xanh.",
 };
 
 export default function Home() {
@@ -23,7 +23,7 @@ export default function Home() {
       <Pricing />
       <Contact />
       <Blog /> */}
-      <TrangChu/>
+      <TrangChu />
     </main>
   );
 }

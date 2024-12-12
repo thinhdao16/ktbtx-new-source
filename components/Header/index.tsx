@@ -39,19 +39,10 @@ const Header = () => {
       <div className="relative mx-auto items-center justify-between ">
         <div className="mb-3 flex justify-between px-4 md:justify-center md:px-8 2xl:px-0">
           <a href="/">
-            <Image
-              src="/images/logo/logo-dark.svg"
+            <img
+              src="/images/logo/logo.png"
               alt="logo"
-              width={119.03}
-              height={30}
-              className="hidden w-full dark:block"
-            />
-            <Image
-              src="/images/logo/logo-light.svg"
-              alt="logo"
-              width={119.03}
-              height={30}
-              className="w-full dark:hidden"
+              className="w-60 dark:hidden"
             />
           </a>
 

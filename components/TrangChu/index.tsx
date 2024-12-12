@@ -44,7 +44,7 @@ function TrangChu() {
               </span>
             </div>
             <div>
-              <button className="bg-red_main px-11 py-3 text-2xl font-semibold text-white ">
+              <button className="bg-red_main px-11 py-3 text-2xl font-semibold text-white hover:bg-white hover:text-red_main hover:border hover:border-red_main ">
                 XEM THÊM
               </button>
             </div>
@@ -53,14 +53,14 @@ function TrangChu() {
             <div className="pb-0 md:pb-20">
               <img
                 src="/images/trangchu/intro-1.jpg"
-                className="h-full rounded-3xl object-cover"
+                className=" md:h-full rounded-3xl object-cover"
                 alt="error"
               />
             </div>
             <div className="pt-0 md:pt-20">
               <img
                 src="/images/trangchu/intro-2.jpg"
-                className="h-full rounded-3xl object-cover"
+                className="md:h-full rounded-3xl object-cover"
                 alt="error"
               />
             </div>

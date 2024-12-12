@@ -1,6 +1,8 @@
 import GiveContactEmail from "@/components/GiveContactEmail";
 import HeaderBanner from "@/components/Header/Banner";
+import Pagination from "@/components/MauNhaDep/Pagination";
 import React from "react";
+import { data } from "../data";
 
 function NhaVuonDep() {
   return (
@@ -14,8 +16,11 @@ function NhaVuonDep() {
         ]}
         backgroundImage="/images/phongthuy/main.jpg"
       />
-      <div className="mx-auto max-w-c-1154 px-4 py-10 md:px-8 2xl:px-0">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-3 md:gap-18"></div>
+      <div>
+        <div className="mx-auto max-w-c-1154 px-4 py-10 md:px-8 2xl:px-0">
+            <Pagination data={data} itemsPerPage={6} />
+        
+        </div>
       </div>
       <GiveContactEmail />
     </div>

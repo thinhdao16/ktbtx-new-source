@@ -1,4 +1,3 @@
-'use client'
 import React from "react";
 import GiveContact from "../GiveContact";
 function TrangChu() {

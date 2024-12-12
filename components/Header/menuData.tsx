@@ -91,7 +91,7 @@ const menuData: Menu[] = [
       },
       {
         id: 35,
-        title: "Xem mày hợp tuổi",
+        title: "Xem màu hợp tuổi",
         newTab: false,
         path: "/ung-dung/xem-mau-hop-tuoi",
       },

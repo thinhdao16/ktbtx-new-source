@@ -1,8 +1,8 @@
 import React from "react";
 import HeaderBanner from "../Header/Banner";
 import Link from "next/link";
-import { data } from "./data";
 import GiveContactEmail from "../GiveContactEmail";
+import { data } from "./dataNav";
 
 function MauNhaDep() {
 

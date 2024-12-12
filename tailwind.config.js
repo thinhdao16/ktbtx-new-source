@@ -40,7 +40,7 @@ module.exports = {
         blue_main: "#00548F",
         red_main: "#BA2031",
         grey_main: "#5D5D5D",
-        gray_main: "#ebecf0"
+        gray_main: "#f4f4f4"
       },
       fontSize: {
         metatitle: ["12px", "20px"],
@@ -55,6 +55,16 @@ module.exports = {
         sectiontitle3: ["44px", "55px"],
         sectiontitle2: ["40px", "52px"],
         sectiontitle4: ["34px", "48px"],
+      },
+      fontWeight: {
+        350: "350",
+        400: "400",
+        450: "450",
+        500: "500",
+        550: "550",
+        600: "600",
+        650: "650",
+        700: "700"
       },
       spacing: {
         4.5: "1.125rem",
@@ -107,7 +117,8 @@ module.exports = {
         "c-1315": "82.188rem",
         "c-1280": "80rem",
         "c-1235": "77.188rem",
-        "c-1154": "72.125rem",
+        // "c-1154": "72.125rem",
+        "c-1154": "67.125rem",
         "c-1016": "63.5rem",
       },
       width: {
@@ -115,8 +126,12 @@ module.exports = {
         "c-1315": "82.188rem",
         "c-1280": "80rem",
         "c-1235": "77.188rem",
-        "c-1154": "72.125rem",
+        "c-1154": "69.125rem",
         "c-1016": "63.5rem",
+      },
+      height: {
+        "100": "28rem",
+        "104": "32rem"
       },
       zIndex: {
         99999: "99999",

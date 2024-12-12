@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 
 import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
+import AnimatedDiv from "../AnimatedDiv";
 
 const Header = () => {
   const [navigationOpen, setNavigationOpen] = useState(false);
@@ -28,7 +29,7 @@ const Header = () => {
   });
 
   return (
-    <header
+    <AnimatedDiv transition={{ duration: 0.8, delay: 0.2 }}
       className={`sticky left-0 top-0 z-99999 w-full pt-7 ${
         stickyMenu
           ? "bg-white !pt-7 shadow transition duration-100 dark:bg-black"
@@ -158,7 +159,7 @@ const Header = () => {
           </nav>
         </div>
       </div>
-    </header>
+    </AnimatedDiv>
   );
 };
 

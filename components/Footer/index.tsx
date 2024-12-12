@@ -138,10 +138,8 @@ const Footer = () => {
                   viewport={{ once: true }}
                   className="animate_top flex gap-4 "
                 >
-                  <div className="">
-                    <span className="font-medium"> LIÊN HỆ</span>
-                  </div>
-                  <div className="font-extralight flex flex-col gap-1">
+                  <div className="whitespace-nowrap font-medium">LIÊN HỆ</div>
+                  <div className="flex flex-col gap-1 font-extralight">
                     <span>
                       Ngõ 170, khu phố 5, phường Tiến Thành, thành phố Đồng
                       Xoài, Tỉnh Bình Phước, Việt Nam

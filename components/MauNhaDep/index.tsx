@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 import HeaderBanner from "../Header/Banner";
 import Link from "next/link";

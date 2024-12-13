@@ -1,20 +1,21 @@
 import React from "react";
 import GiveContact from "../GiveContact";
+import Link from "next/link";
 function TrangChu() {
   return (
     <div className="">
-      <div className="bg-cotain relative flex h-[30vh] md:h-screen flex-col items-center justify-center bg-[url('/images/trangchu/main.jpg')] bg-center">
+      <div className="bg-cotain relative flex h-[30vh] flex-col items-center justify-center bg-[url('/images/trangchu/main.jpg')] bg-center md:h-screen">
         <div className="absolute inset-0 bg-black opacity-30"></div>
         <div className="relative z-10 flex flex-col items-center gap-6">
-          <span className="w-3/4 md:w-7/12 text-center text-xl md:text-7xl font-semibold text-white">
+          <span className="w-3/4 text-center text-xl font-semibold text-white md:w-7/12 md:text-7xl">
             THIẾT KẾ NHÀ Ở CHUẨN PHONG THỦY
           </span>
           <div className="flex gap-8">
-            <button className="bg-red_main px-11 py-3 text-lg md:text-2xl font-semibold text-white">
-              TƯ VẤN
+            <button className="bg-red_main px-11 py-3 text-lg font-semibold text-white md:text-2xl">
+              <Link href="/lien-he">TƯ VẤN</Link>
             </button>
-            <button className="bg-white px-11 py-3 text-lg md:text-2xl font-semibold text-red_main">
-              BẢNG GIÁ
+            <button className="bg-white px-11 py-3 text-lg font-semibold text-red_main md:text-2xl">
+              <Link href="/bang-gia">BẢNG GIÁ</Link>
             </button>
           </div>
         </div>
@@ -30,21 +31,21 @@ function TrangChu() {
             </span>
             <div className="py-6">
               <p className="pb-3">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
-                nostrud exerci tation ullamcorper suscipit lobortis nisl ut
-                aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor
-                in hendrerit in vulputate velit esse molestie consequat,
+                Kiến trúc không chỉ là nghệ thuật sắp đặt không gian, mà còn là
+                sự kết nối giữa con người và môi trường xung quanh. Với sự phát
+                triển của công nghệ và tư duy sáng tạo, kiến trúc đương đại
+                hướng đến sự hài hòa giữa công năng, thẩm mỹ và tính bền vững.
               </p>
               <span>
-                vel illum dolore eu feugiat nulla facilisis at vero eros et
-                accumsan et iusto odio dignissim qui blandit praesent luptatum
-                zzril delenit augue duis dolore te feugait nulla
+                Tại "Bầu Trời Xanh", chúng tôi cam kết mang đến những giải pháp
+                kiến trúc tối ưu, kết hợp giữa phong cách hiện đại và giá trị
+                truyền thống. Mỗi công trình đều được thiết kế để phản ánh phong
+                cách sống và nhu cầu cá nhân, đồng thời tôn trọng thiên nhiên và
+                văn hóa địa phương.
               </span>
             </div>
             <div>
-              <button className="bg-red_main px-11 py-3 text-2xl font-semibold text-white hover:bg-white hover:text-red_main hover:border hover:border-red_main ">
+              <button className="bg-red_main px-11 py-3 text-2xl font-semibold text-white hover:border hover:border-red_main hover:bg-white hover:text-red_main ">
                 XEM THÊM
               </button>
             </div>
@@ -53,14 +54,14 @@ function TrangChu() {
             <div className="pb-0 md:pb-20">
               <img
                 src="/images/trangchu/intro-1.jpg"
-                className=" md:h-full rounded-3xl object-cover"
+                className=" rounded-3xl object-cover md:h-full"
                 alt="error"
               />
             </div>
             <div className="pt-0 md:pt-20">
               <img
                 src="/images/trangchu/intro-2.jpg"
-                className="md:h-full rounded-3xl object-cover"
+                className="rounded-3xl object-cover md:h-full"
                 alt="error"
               />
             </div>
@@ -143,9 +144,9 @@ function TrangChu() {
               ĐỘI NGŨ GIÀU KINH NGHIỆM
             </span>
             <p>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-              erat volutpat.
+              Đội ngũ chuyên gia của chúng tôi sở hữu nhiều năm kinh nghiệm
+              trong lĩnh vực kiến trúc, mang đến những giải pháp tối ưu và sáng
+              tạo cho mọi dự án.
             </p>
           </div>
           <div className="flex flex-col items-center justify-center gap-4">
@@ -154,9 +155,8 @@ function TrangChu() {
               KIẾN THỨC PHONG THỦY CHUYÊN SÂU
             </span>
             <p>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-              erat volutpat.
+              Chúng tôi am hiểu sâu sắc về phong thủy, giúp các công trình không
+              chỉ đẹp mắt mà còn hài hòa với yếu tố tâm linh và văn hóa.
             </p>
           </div>
           <div className="flex flex-col items-center justify-center gap-4">
@@ -165,9 +165,8 @@ function TrangChu() {
               HỖ TRỢ LINH HOẠT
             </span>
             <p>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-              erat volutpat.
+              Với phong cách làm việc chuyên nghiệp và linh hoạt, chúng tôi luôn
+              sẵn sàng hỗ trợ khách hàng trong mọi giai đoạn của dự án.
             </p>
           </div>
         </div>
@@ -183,13 +182,13 @@ function TrangChu() {
                 className="mb-3 h-45 w-full object-cover"
               />
               <div className="px-6">
-                <span className="font-medium text-red_main">
+                <div className="font-medium text-red_main">
                   TẠI SAO CẦN PHONG THỦY TRONG THIẾT KẾ NHÀ Ở
-                </span>
+                </div>
                 <p className="py-1">
-                  Lorem ipsumnibhnibh dolor sit amet, consectetuer adipiscing
-                  elit, sed diam nonummy nibh nibheuismod tinciduntv ummyummy
-                  nibhnibh
+                  Phong thủy là yếu tố quan trọng trong việc định hình không
+                  gian sống, tạo nên sự cân bằng và hài hòa giữa con người và
+                  môi trường xung quanh.
                 </p>
                 <button className="bg-blue_main px-6 py-1.5 text-sm text-white">
                   XEM CHI TIẾT
@@ -204,12 +203,11 @@ function TrangChu() {
               />
               <div className="px-6">
                 <span className="font-medium text-red_main">
-                  TẠI SAO CẦN PHONG THỦY TRONG THIẾT KẾ NHÀ Ở
+                  TẦM QUAN TRỌNG CỦA PHONG THỦY TRONG KHÔNG GIAN SỐNG
                 </span>
                 <p className="py-1">
-                  Lorem ipsumnibhnibh dolor sit amet, consectetuer adipiscing
-                  elit, sed diam nonummy nibh nibheuismod tinciduntv ummyummy
-                  nibhnibh
+                  Áp dụng phong thủy đúng cách giúp gia tăng vượng khí, cải
+                  thiện sức khỏe, tài lộc và sự thịnh vượng cho gia đình.
                 </p>
                 <button className="bg-blue_main px-6 py-1.5 text-sm text-white">
                   XEM CHI TIẾT
@@ -224,12 +222,12 @@ function TrangChu() {
               />
               <div className="px-6">
                 <span className="font-medium text-red_main">
-                  TẠI SAO CẦN PHONG THỦY TRONG THIẾT KẾ NHÀ Ở
+                  GIẢI PHÁP PHONG THỦY TOÀN DIỆN
                 </span>
                 <p className="py-1">
-                  Lorem ipsumnibhnibh dolor sit amet, consectetuer adipiscing
-                  elit, sed diam nonummy nibh nibheuismod tinciduntv ummyummy
-                  nibhnibh
+                  Chúng tôi cung cấp các giải pháp phong thủy toàn diện, từ
+                  thiết kế ban đầu đến tối ưu hóa không gian sống theo nguyên
+                  tắc phong thủy.
                 </p>
                 <button className="bg-blue_main px-6 py-1.5 text-sm text-white">
                   XEM CHI TIẾT

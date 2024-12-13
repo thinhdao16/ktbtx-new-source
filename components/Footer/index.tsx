@@ -63,22 +63,22 @@ const Footer = () => {
                   <div className="col-span-5">
                     <div className="mb-3 font-medium">VỀ CHÚNG TÔI</div>
                     <div className="flex flex-col gap-1 font-extralight">
-                      <a href="">Về công ty BẦU TRỜI XANH</a>
-                      <a href="">Dịch vụ của BẦU TRỜI XANH</a>
-                      <a href="">Vì sao chọn chúng tôi</a>
+                      <a href="/ve-chung-toi">Về công ty BẦU TRỜI XANH</a>
+                      <a href="/ve-chung-toi">Dịch vụ của BẦU TRỜI XANH</a>
+                      <a href="/ve-chung-toi">Vì sao chọn chúng tôi</a>
                     </div>
                   </div>
                   <div className="col-span-7">
                     <div className="mb-3 font-medium">PHONG THỦY</div>
                     <div className="flex flex-col gap-1 font-extralight">
-                      <a href="">
+                      <a href="/phong-thuy/ho-so-tieu-chi">
                         Quy trình thực hiện hồ sơ tiêu chí phong thủy
                       </a>
-                      <a href="">
+                      <a href="/phong-thuy/ban-ve-thi-cong">
                         Quy trình thiết kế mặt bằng chuẩn pt hợp công năng
                       </a>
-                      <a href="">
-                        Quy trình thiết kế bản vẽ thi công nhà ẹp chuẩn phong
+                      <a href="/phong-thuy/mat-bang-chuan">
+                        Quy trình thiết kế bản vẽ thi công nhà đẹp chuẩn phong
                         thủy
                       </a>
                     </div>
@@ -106,17 +106,17 @@ const Footer = () => {
                   <div className="col-span-5">
                     <div className="mb-3 font-medium">MẪU NHÀ ĐẸP</div>
                     <div className="flex flex-col gap-1 font-extralight">
-                      <a href="">Nhà vườn đẹp</a>
-                      <a href="">Nhà phố đẹp</a>
-                      <a href="">Biệt thự đẹp</a>
+                      <a href="/mau-nha-dep/nha-vuon-dep">Nhà vườn đẹp</a>
+                      <a href="/mau-nha-dep/nha-pho-dep">Nhà phố đẹp</a>
+                      <a href="/mau-nha-dep/biet-thu-dep">Biệt thự đẹp</a>
                     </div>
                   </div>
                   <div className="col-span-7">
                     <div className="mb-3 font-medium">BẢNG GIÁ</div>
                     <div className="flex flex-col gap-1 font-extralight">
-                      <a href="">Hồ sơ tiêu chí phong thủy</a>
-                      <a href="">Thiết kế mặt bằng phong thủy</a>
-                      <a href="">Thiết kế nhà đẹp chuẩn phong thủy</a>
+                      <a href="/bang-gia">Hồ sơ tiêu chí phong thủy</a>
+                      <a href="/bang-gia">Thiết kế mặt bằng phong thủy</a>
+                      <a href="/bang-gia">Thiết kế nhà đẹp chuẩn phong thủy</a>
                     </div>
                   </div>
                 </motion.div>

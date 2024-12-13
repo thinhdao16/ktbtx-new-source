@@ -1,10 +1,7 @@
-"use client";
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
-import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
 import AnimatedDiv from "../AnimatedDiv";
 
@@ -37,12 +34,12 @@ const Header = () => {
       }`}
     >
       <div className="relative mx-auto items-center justify-between ">
-        <div className="mb-3 flex justify-between px-4 md:justify-center md:px-8 2xl:px-0">
+        <div className="mb-1 flex justify-between px-4 md:justify-center md:px-8 2xl:px-0">
           <a href="/">
             <img
               src="/images/logo/logo.png"
               alt="logo"
-              className="w-60 dark:hidden"
+              className="w-72 dark:hidden"
             />
           </a>
 
@@ -89,7 +86,7 @@ const Header = () => {
 
         {/* Nav Menu Start   */}
         <div
-          className={`invisible    h-0 w-full items-center justify-center bg-blue_main md:px-8 xl:visible xl:flex xl:h-auto  xl:w-full 2xl:px-0 ${
+          className={`invisible  font-500  h-0 w-full items-center justify-center bg-blue_main md:px-8 xl:visible xl:flex xl:h-auto  xl:w-full 2xl:px-0 ${
             navigationOpen &&
             "navbar !visible mt-4 h-auto max-h-[400px] rounded-md  p-7.5 shadow-solid-5 dark:bg-blacksection xl:h-auto xl:p-0 xl:shadow-none xl:dark:bg-transparent"
           }`}
@@ -97,15 +94,16 @@ const Header = () => {
           <nav>
             <ul className="flex flex-col gap-5 xl:flex-row xl:items-center xl:gap-10">
               {menuData.map((menuItem, key) => (
-                <li
+                <Link
                   key={key}
                   className={`px-4 py-3 text-white ${
                     menuItem.submenu ? "group relative" : ""
                   } ${
                     pathUrl === menuItem.path
-                      ? "bg-red_main  text-white"
+                      ? ""
                       : "hover:bg-red_main"
                   }`}
+                 href={menuItem.path || "#"}
                 >
                   {menuItem.submenu ? (
                     <>
@@ -144,7 +142,7 @@ const Header = () => {
                       {menuItem.title}
                     </Link>
                   )}
-                </li>
+                </Link>
               ))}
             </ul>
           </nav>

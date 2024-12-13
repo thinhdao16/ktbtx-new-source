@@ -2,7 +2,7 @@ export const data = [
   {
     tieuDe: "NHÀ PHỐ HƯỚNG TÂY, có gác lửng, nội thất mộc mạc",
     noiDung:
-      "nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore ",
+      "Ngôi nhà phố hướng Tây với thiết kế gác lửng mang lại sự thông thoáng và tận dụng tối đa không gian sống. Nội thất được thiết kế theo phong cách mộc mạc, sử dụng chất liệu tự nhiên như gỗ và các tông màu ấm áp, tạo cảm giác gần gũi và bình yên.",
     dienTichDat: "100",
     chiPhiThiCong: "900 - 950",
     diaDiem: "Hồ Chí Minh",
@@ -22,7 +22,7 @@ export const data = [
   {
     tieuDe: "NHÀ PHỐ HƯỚNG TÂY, có gác lửng, nội thất mộc mạc",
     noiDung:
-      "nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore ",
+      "Ngôi nhà phố hướng Tây với thiết kế gác lửng mang lại sự thông thoáng và tận dụng tối đa không gian sống. Nội thất được thiết kế theo phong cách mộc mạc, sử dụng chất liệu tự nhiên như gỗ và các tông màu ấm áp, tạo cảm giác gần gũi và bình yên.",
     dienTichDat: "100",
     chiPhiThiCong: "900 - 950",
     diaDiem: "Hồ Chí Minh",
@@ -42,7 +42,7 @@ export const data = [
   {
     tieuDe: "NHÀ PHỐ HƯỚNG TÂY, có gác lửng, nội thất mộc mạc",
     noiDung:
-      "nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore ",
+      "Ngôi nhà phố hướng Tây với thiết kế gác lửng mang lại sự thông thoáng và tận dụng tối đa không gian sống. Nội thất được thiết kế theo phong cách mộc mạc, sử dụng chất liệu tự nhiên như gỗ và các tông màu ấm áp, tạo cảm giác gần gũi và bình yên.",
     dienTichDat: "100",
     chiPhiThiCong: "900 - 950",
     diaDiem: "Hồ Chí Minh",
@@ -62,7 +62,7 @@ export const data = [
   {
     tieuDe: "NHÀ PHỐ HƯỚNG TÂY, có gác lửng, nội thất mộc mạc",
     noiDung:
-      "nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore ",
+      "Ngôi nhà phố hướng Tây với thiết kế gác lửng mang lại sự thông thoáng và tận dụng tối đa không gian sống. Nội thất được thiết kế theo phong cách mộc mạc, sử dụng chất liệu tự nhiên như gỗ và các tông màu ấm áp, tạo cảm giác gần gũi và bình yên.",
     dienTichDat: "100",
     chiPhiThiCong: "900 - 950",
     diaDiem: "Hồ Chí Minh",
@@ -82,7 +82,7 @@ export const data = [
   {
     tieuDe: "NHÀ PHỐ HƯỚNG TÂY, có gác lửng, nội thất mộc mạc",
     noiDung:
-      "nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore ",
+      "Ngôi nhà phố hướng Tây với thiết kế gác lửng mang lại sự thông thoáng và tận dụng tối đa không gian sống. Nội thất được thiết kế theo phong cách mộc mạc, sử dụng chất liệu tự nhiên như gỗ và các tông màu ấm áp, tạo cảm giác gần gũi và bình yên.",
     dienTichDat: "100",
     chiPhiThiCong: "900 - 950",
     diaDiem: "Hồ Chí Minh",
@@ -102,7 +102,7 @@ export const data = [
   {
     tieuDe: "NHÀ PHỐ HƯỚNG TÂY, có gác lửng, nội thất mộc mạc",
     noiDung:
-      "nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore ",
+      "Ngôi nhà phố hướng Tây với thiết kế gác lửng mang lại sự thông thoáng và tận dụng tối đa không gian sống. Nội thất được thiết kế theo phong cách mộc mạc, sử dụng chất liệu tự nhiên như gỗ và các tông màu ấm áp, tạo cảm giác gần gũi và bình yên.",
     dienTichDat: "100",
     chiPhiThiCong: "900 - 950",
     diaDiem: "Hồ Chí Minh",
@@ -122,7 +122,7 @@ export const data = [
   {
     tieuDe: "NHÀ PHỐ HƯỚNG TÂY, có gác lửng, nội thất mộc mạc",
     noiDung:
-      "nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore ",
+      "Ngôi nhà phố hướng Tây với thiết kế gác lửng mang lại sự thông thoáng và tận dụng tối đa không gian sống. Nội thất được thiết kế theo phong cách mộc mạc, sử dụng chất liệu tự nhiên như gỗ và các tông màu ấm áp, tạo cảm giác gần gũi và bình yên.",
     dienTichDat: "100",
     chiPhiThiCong: "900 - 950",
     diaDiem: "Hồ Chí Minh",
@@ -142,7 +142,7 @@ export const data = [
   {
     tieuDe: "NHÀ PHỐ HƯỚNG TÂY, có gác lửng, nội thất mộc mạc",
     noiDung:
-      "nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore ",
+      "Ngôi nhà phố hướng Tây với thiết kế gác lửng mang lại sự thông thoáng và tận dụng tối đa không gian sống. Nội thất được thiết kế theo phong cách mộc mạc, sử dụng chất liệu tự nhiên như gỗ và các tông màu ấm áp, tạo cảm giác gần gũi và bình yên.",
     dienTichDat: "100",
     chiPhiThiCong: "900 - 950",
     diaDiem: "Hồ Chí Minh",
@@ -162,7 +162,7 @@ export const data = [
   {
     tieuDe: "NHÀ PHỐ HƯỚNG TÂY, có gác lửng, nội thất mộc mạc",
     noiDung:
-      "nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore ",
+      "Ngôi nhà phố hướng Tây với thiết kế gác lửng mang lại sự thông thoáng và tận dụng tối đa không gian sống. Nội thất được thiết kế theo phong cách mộc mạc, sử dụng chất liệu tự nhiên như gỗ và các tông màu ấm áp, tạo cảm giác gần gũi và bình yên.",
     dienTichDat: "100",
     chiPhiThiCong: "900 - 950",
     diaDiem: "Hồ Chí Minh",
@@ -182,7 +182,7 @@ export const data = [
   {
     tieuDe: "NHÀ PHỐ HƯỚNG TÂY, có gác lửng, nội thất mộc mạc",
     noiDung:
-      "nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore ",
+      "Ngôi nhà phố hướng Tây với thiết kế gác lửng mang lại sự thông thoáng và tận dụng tối đa không gian sống. Nội thất được thiết kế theo phong cách mộc mạc, sử dụng chất liệu tự nhiên như gỗ và các tông màu ấm áp, tạo cảm giác gần gũi và bình yên.",
     dienTichDat: "100",
     chiPhiThiCong: "900 - 950",
     diaDiem: "Hồ Chí Minh",
@@ -202,7 +202,7 @@ export const data = [
   {
     tieuDe: "NHÀ PHỐ HƯỚNG TÂY, có gác lửng, nội thất mộc mạc",
     noiDung:
-      "nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore ",
+      "Ngôi nhà phố hướng Tây với thiết kế gác lửng mang lại sự thông thoáng và tận dụng tối đa không gian sống. Nội thất được thiết kế theo phong cách mộc mạc, sử dụng chất liệu tự nhiên như gỗ và các tông màu ấm áp, tạo cảm giác gần gũi và bình yên.",
     dienTichDat: "100",
     chiPhiThiCong: "900 - 950",
     diaDiem: "Hồ Chí Minh",
@@ -222,7 +222,7 @@ export const data = [
   {
     tieuDe: "NHÀ PHỐ HƯỚNG TÂY, có gác lửng, nội thất mộc mạc",
     noiDung:
-      "nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore ",
+      "Ngôi nhà phố hướng Tây với thiết kế gác lửng mang lại sự thông thoáng và tận dụng tối đa không gian sống. Nội thất được thiết kế theo phong cách mộc mạc, sử dụng chất liệu tự nhiên như gỗ và các tông màu ấm áp, tạo cảm giác gần gũi và bình yên.",
     dienTichDat: "100",
     chiPhiThiCong: "900 - 950",
     diaDiem: "Hồ Chí Minh",
@@ -242,7 +242,7 @@ export const data = [
   {
     tieuDe: "NHÀ PHỐ HƯỚNG TÂY, có gác lửng, nội thất mộc mạc",
     noiDung:
-      "nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore ",
+      "Ngôi nhà phố hướng Tây với thiết kế gác lửng mang lại sự thông thoáng và tận dụng tối đa không gian sống. Nội thất được thiết kế theo phong cách mộc mạc, sử dụng chất liệu tự nhiên như gỗ và các tông màu ấm áp, tạo cảm giác gần gũi và bình yên.",
     dienTichDat: "100",
     chiPhiThiCong: "900 - 950",
     diaDiem: "Hồ Chí Minh",
@@ -262,7 +262,7 @@ export const data = [
   {
     tieuDe: "NHÀ PHỐ HƯỚNG TÂY, có gác lửng, nội thất mộc mạc",
     noiDung:
-      "nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore ",
+      "Ngôi nhà phố hướng Tây với thiết kế gác lửng mang lại sự thông thoáng và tận dụng tối đa không gian sống. Nội thất được thiết kế theo phong cách mộc mạc, sử dụng chất liệu tự nhiên như gỗ và các tông màu ấm áp, tạo cảm giác gần gũi và bình yên.",
     dienTichDat: "100",
     chiPhiThiCong: "900 - 950",
     diaDiem: "Hồ Chí Minh",
@@ -282,7 +282,7 @@ export const data = [
   {
     tieuDe: "NHÀ PHỐ HƯỚNG TÂY, có gác lửng, nội thất mộc mạc",
     noiDung:
-      "nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore ",
+      "Ngôi nhà phố hướng Tây với thiết kế gác lửng mang lại sự thông thoáng và tận dụng tối đa không gian sống. Nội thất được thiết kế theo phong cách mộc mạc, sử dụng chất liệu tự nhiên như gỗ và các tông màu ấm áp, tạo cảm giác gần gũi và bình yên.",
     dienTichDat: "100",
     chiPhiThiCong: "900 - 950",
     diaDiem: "Hồ Chí Minh",

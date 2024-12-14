@@ -18,6 +18,17 @@ function XemHuongNha() {
         ]}
         backgroundImage="/images/vechungtoi/main.jpg"
       />
+        <div>
+        <iframe
+          src="https://xdnd-w-m.vercel.app/xdnd/vn/xem-huong-lam-nha-hop-tuoi.html"
+          style={{
+            width: "100%",
+            height: `600px`,
+            border: "none",
+          }}
+          title="Ứng dụng tính chi phí xây dựng"
+        ></iframe>
+      </div>
     </div>
   );
 }

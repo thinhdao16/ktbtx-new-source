@@ -17,6 +17,17 @@ function XemMauHopTuoi() {
         ]}
         backgroundImage="/images/vechungtoi/main.jpg"
       />
+      <div>
+        <iframe
+          src="https://xdnd-w-m.vercel.app/xdnd/vn/xem-mau-hop-tuoi-get.html"
+          style={{
+            width: "100%",
+            height: `420px`,
+            border: "none",
+          }}
+          title="Ứng dụng tính chi phí xây dựng"
+        ></iframe>
+      </div>
     </div>
   );
 }

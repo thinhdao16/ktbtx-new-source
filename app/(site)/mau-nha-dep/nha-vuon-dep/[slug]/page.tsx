@@ -6,7 +6,8 @@ export default async function Page({
   params: Promise<{ slug: string }>
 }) {
   const slug = (await params).slug
+  const parseData = JSON.parse(decodeURIComponent(slug));
   return <div>
-    <MauNhaDepDetail id={slug} />
+    <MauNhaDepDetail data={parseData} />
   </div>
 }

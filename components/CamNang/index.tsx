@@ -6,7 +6,6 @@ import { data } from "./data";
 import PaginatedData from "./components/Pagination";
 
 function CamNang() {
- 
 
   return (
     <div>

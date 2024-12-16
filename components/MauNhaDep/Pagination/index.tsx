@@ -19,7 +19,7 @@ const PaginatedData = ({ data, itemsPerPage }) => {
   const [currentPage, setCurrentPage] = React.useState(0);
 
   const pageCount = Math.ceil(data.length / itemsPerPage);
-  
+
   const handlePageClick = (event) => {
     setCurrentPage(event.selected);
   };
@@ -38,24 +38,28 @@ const PaginatedData = ({ data, itemsPerPage }) => {
   return (
     <div>
       <div className="grid grid-cols-1 gap-8 md:grid-cols-3 md:gap-7">
-        {currentData.map((item, index: string) => (
-          <div key={index}>
-              <Link href={`/mau-nha-dep/nha-vuon-dep/${index}`}>
-              <img
-                src={item?.imgMain}
-                alt="error"
-                className="h-80 w-full rounded-4xl object-cover md:h-[65vh]"
-              />
-            </Link>
-          </div>
-        ))}
+        {currentData.map((item, index: string) => {
+          const dataItemDetail = encodeURIComponent(JSON.stringify(item))
+          return (
+            <div key={index}>
+              <Link href={`/mau-nha-dep/nha-vuon-dep/${dataItemDetail}`}>
+                <img
+                  src={item?.img?.[0]}
+                  alt="error"
+                  className="h-80 w-full rounded-4xl object-cover md:h-[65vh]"
+                />
+              </Link>
+            </div>
+          )
+        }
+        )}
       </div>
       <div className="pagination-wrapper flex  items-center justify-center gap-1">
         <button onClick={goToFirstPage} className="border bottom-1 border-grey_main p-2 rounded-full hover:bg-blue_main text-grey_main hover:text-white ">
           <PiLessThanOrEqualThin />
         </button>
         <ReactPaginate
-          previousLabel={<HiOutlineChevronDoubleLeft  />}
+          previousLabel={<HiOutlineChevronDoubleLeft />}
           nextLabel={<HiOutlineChevronDoubleRight />}
           breakLabel={"..."}
           pageCount={pageCount}
@@ -75,7 +79,7 @@ const PaginatedData = ({ data, itemsPerPage }) => {
           forcePage={currentPage}
         />
         <button onClick={goToLastPage} className="border bottom-1 border-grey_main p-2 rounded-full hover:bg-blue_main text-grey_main hover:text-white ">
-          <PiGreaterThanOrEqualThin  />
+          <PiGreaterThanOrEqualThin />
         </button>
       </div>
     </div>

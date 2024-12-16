@@ -28,17 +28,11 @@ function VeChungToi() {
               BẦU TRỜI XANH
             </div>
             <div className="pb-3">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-              erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
-              tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-              consequat. Duis autem vel eum iriure dolor in hendrerit in
-              vulputate velit esse molestie consequat,
+              Bầu Trời Xanh là biểu tượng của sự tự do và hy vọng. Từ những ngày đầu thành lập, chúng tôi đã không ngừng nỗ lực để phát triển và vươn xa, mang lại giá trị bền vững cho cộng đồng.
+              Với tinh thần đổi mới và cống hiến, chúng tôi cam kết tạo nên những bước tiến vững chắc trong mọi lĩnh vực hoạt động. Chúng tôi luôn lấy sự hài lòng và niềm tin của khách hàng làm kim chỉ nam để phấn đấu không ngừng.
             </div>
             <div>
-              vel illum dolore eu feugiat nulla facilisis at vero eros et
-              accumsan et iusto odio dignissim qui blandit praesent luptatum
-              zzril delenit augue duis dolore te feugait nulla
+              Hành trình này không chỉ là một câu chuyện về thành công, mà còn là sự sẻ chia, kết nối và tạo dựng niềm tin cho một tương lai tốt đẹp hơn. Chúng tôi tự hào đồng hành cùng cộng đồng trên con đường chinh phục những đỉnh cao mới.
             </div>
           </div>
         </div>
@@ -59,18 +53,12 @@ function VeChungToi() {
                 </div>
                 <div className="pr-0 md:pr-25">
                   <div className="pb-3">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                    magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-                    quis nostrud exerci tation ullamcorper suscipit lobortis
-                    nisl ut aliquip ex ea commodo consequat. Duis autem vel eum
-                    iriure dolor in hendrerit in vulputate velit esse molestie
-                    consequat,
+                    Chúng tôi hướng tới việc trở thành một đơn vị tiên phong, mang lại giá trị bền vững và sáng tạo cho cộng đồng.
+                    Với khát vọng vươn xa,
+                    chúng tôi cam kết xây dựng một tương lai tốt đẹp hơn, nơi mọi người cùng nhau phát triển và đạt được thành công.
                   </div>
                   <div>
-                    vel illum dolore eu feugiat nulla facilisis at vero eros et
-                    accumsan et iusto odio dignissim qui blandit praesent
-                    luptatum zzril delenit augue duis dolore te feugait nulla
+                    Chúng tôi tin rằng, bằng sự tận tâm và đoàn kết, mỗi bước đi đều góp phần khẳng định giá trị cốt lõi và nâng tầm vị thế của chúng tôi trên hành trình phát triển.
                   </div>
                 </div>
               </div>
@@ -92,18 +80,14 @@ function VeChungToi() {
               TRÁCH NHIỆM
             </span>
             <p>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-              erat volutpat.
+              Chúng tôi cam kết thực hiện trách nhiệm với cộng đồng, khách hàng và đối tác thông qua sự tận tâm và minh bạch trong mọi hoạt động. Sự phát triển bền vững luôn là kim chỉ nam để chúng tôi không ngừng nỗ lực, tạo ra giá trị tích cực và đóng góp cho xã hội.
             </p>
           </div>
           <div className="flex flex-col items-center justify-center gap-4">
             <div className="h-22 w-22 rounded-full bg-blue_main"></div>
             <span className="text-lg font-medium text-red_main">UY TÍN</span>
             <p>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-              erat volutpat.
+            Uy tín là nền tảng cho mọi hoạt động của chúng tôi. Chúng tôi luôn giữ vững lời hứa, thực hiện cam kết và mang đến giá trị thực sự cho khách hàng, đối tác và cộng đồng. Mỗi bước tiến đều được xây dựng trên sự tin cậy và chất lượng, khẳng định vị thế và sự khác biệt của chúng tôi.
             </p>
           </div>
           <div className="flex flex-col items-center justify-center gap-4">
@@ -112,9 +96,7 @@ function VeChungToi() {
               HỖ TRỢ LINH HOẠT
             </span>
             <p>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-              erat volutpat.
+            Chúng tôi cam kết mang đến sự hỗ trợ nhanh chóng, linh hoạt và hiệu quả, đáp ứng mọi nhu cầu của khách hàng một cách tốt nhất. Với tinh thần sẵn sàng lắng nghe và đồng hành, chúng tôi luôn tìm kiếm giải pháp tối ưu để đảm bảo sự hài lòng và tin cậy trong từng trải nghiệm dịch vụ.
             </p>
           </div>
         </div>

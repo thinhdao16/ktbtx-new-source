@@ -94,7 +94,7 @@ const Header = () => {
           <nav>
             <ul className="flex flex-col gap-5 xl:flex-row xl:items-center xl:gap-10">
               {menuData.map((menuItem, key) => (
-                <Link
+                <div
                   key={key}
                   className={`px-4 py-3 text-white ${
                     menuItem.submenu ? "group relative" : ""
@@ -103,7 +103,7 @@ const Header = () => {
                       ? ""
                       : "hover:bg-red_main"
                   }`}
-                 href={menuItem.path || "#"}
+                //  href={menuItem.path || "#"}
                 >
                   {menuItem.submenu ? (
                     <>
@@ -142,7 +142,7 @@ const Header = () => {
                       {menuItem.title}
                     </Link>
                   )}
-                </Link>
+                </div>
               ))}
             </ul>
           </nav>

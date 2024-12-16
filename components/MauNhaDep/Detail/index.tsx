@@ -34,7 +34,7 @@ function MauNhaDepDetail({ data }) {
         transition={{ duration: 0.8, delay: 0.2 }}
         className={`bg-cotain relative flex h-[30vh] flex-col items-start justify-center bg-center md:h-screen`}
         style={{
-          backgroundImage: `url('${data?.imgMain}')`,
+          backgroundImage: `url('${data?.img?.[0]}')`,
         }}
       ></AnimatedDiv>
       <AnimatedDiv transition={{ duration: 0.8, delay: 0.2 }}>

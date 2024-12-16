@@ -1,7 +1,5 @@
 import React from "react";
 import GiveContactEmail from "@/components/GiveContactEmail";
-import Link from "next/link";
-import { getRandomItems } from "@/components/utils";
 import AnimatedDiv from "@/components/AnimatedDiv";
 
 const DetailInfo = ({

@@ -1,6 +1,9 @@
-import React from "react";
+'use client'
+import React, { useEffect, useState } from "react";
 import GiveContactEmail from "@/components/GiveContactEmail";
 import AnimatedDiv from "@/components/AnimatedDiv";
+import { getHouseModelRandom } from "./api";
+import Link from "next/link";
 
 const DetailInfo = ({
   title,
@@ -28,6 +31,19 @@ function MauNhaDepDetail({ data }) {
     { title: "Năm thiết kế", description: data?.year },
   ];
 
+  const [dataProjectDif, setDataProjectDif] = useState([])
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const postings = await getHouseModelRandom(3);
+        setDataProjectDif(postings);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      } finally {
+      }
+    };
+    fetchData()
+  }, [])
   return (
     <div className="text-lg">
       <AnimatedDiv
@@ -37,8 +53,7 @@ function MauNhaDepDetail({ data }) {
           backgroundImage: `url('${data?.img?.[0]}')`,
         }}
       ></AnimatedDiv>
-      <AnimatedDiv transition={{ duration: 0.8, delay: 0.2 }}>
-        <div className="mx-auto flex max-w-c-1154 flex-col gap-6 px-4 py-10 md:px-8 2xl:px-0">
+      <AnimatedDiv transition={{ duration: 0.8, delay: 0.2 }} className={"mx-auto flex max-w-c-1154 flex-col gap-6 px-4 py-10 md:px-8 2xl:px-0"}>
           <div className="text-3xl font-medium text-red_main md:text-5xl">
             {" "}
             TỔNG QUAN
@@ -54,10 +69,7 @@ function MauNhaDepDetail({ data }) {
               />
             ))}
           </div>
-          <div>
-            {data?.img?.map((dataImg) => <img src={dataImg} alt="" />)}
-          </div>
-        </div>
+            {data?.img?.map((dataImg:string) => <img src={dataImg} alt="" />)}
       </AnimatedDiv>
       <AnimatedDiv
         transition={{ duration: 0.8, delay: 0.2 }}
@@ -67,13 +79,14 @@ function MauNhaDepDetail({ data }) {
           <div className="pb-5 text-center text-3xl font-medium text-red_main md:text-4xl">
             CÁC DỰ ÁN KHÁC
           </div>
-          {/* <div className="grid grid-cols-1 gap-8 md:grid-cols-3 md:gap-7">
-            {getRandomItems(data, 3).map((item, index) => {
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-3 md:gap-7">
+            {dataProjectDif.map((item:any, index) => {
+          const dataItemDetail = encodeURIComponent(JSON.stringify(item))
               return (
                 <div key={index}>
-                  <Link href={`/mau-nha-dep/nha-vuon-dep/${index}`}>
+                  <Link href={`/mau-nha-dep/nha-vuon-dep/${dataItemDetail}`}>
                     <img
-                      src={item?.imgMain}
+                      src={item?.img?.[0]}
                       alt="error"
                       className="h-80 w-full rounded-4xl object-cover md:h-[55vh]"
                     />
@@ -81,7 +94,7 @@ function MauNhaDepDetail({ data }) {
                 </div>
               );
             })}
-          </div> */}
+          </div>
         </div>
       </AnimatedDiv>
 

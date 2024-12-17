@@ -1,11 +1,13 @@
+'use client'
 import AnimatedDiv from "@/components/AnimatedDiv";
 import HeaderBanner from "@/components/Header/Banner";
-import { getRandomItems } from "@/components/utils";
 import Link from "next/link";
-import React from "react";
-import { data } from "../data";
+import React, { useEffect, useState } from "react";
+import { getHandBookRandoom } from "../api";
+import { message } from "antd";
 
 function CamNangDetail({ dataDetail }) {
+  const [dataRandom , setDataRandom] = useState([])
   function getCategoryName(type: string) {
     const categoryMap = {
       design: "Thiết kế",
@@ -13,9 +15,21 @@ function CamNangDetail({ dataDetail }) {
       costCalculation: "Tính toán chi phí",
       share: "Chia sẻ",
     };
-
-    return categoryMap[type] || "Không xác định"; // Trả về "Không xác định" nếu không tìm thấy.
+    return categoryMap[type] || "Không xác định";
   }
+  useEffect(() => {
+      const fetchData = async () => {
+        try {
+          const postings = await getHandBookRandoom(3);
+          setDataRandom(postings);
+        } catch (error) {
+          message.error(error?.response?.message)
+        } finally {
+        }
+      };
+      fetchData()
+    }, [])
+  
   return (
     <div>
       <HeaderBanner
@@ -32,6 +46,12 @@ function CamNangDetail({ dataDetail }) {
         <div className="text-start text-xl font-semibold text-red_main md:text-5xl">
           {dataDetail?.title}
         </div>
+        <div className="mt-5">
+          <p
+            suppressHydrationWarning
+            dangerouslySetInnerHTML={{ __html: dataDetail?.script || "abc" }}
+          />
+        </div>
       </AnimatedDiv>
       <AnimatedDiv
         transition={{ duration: 0.8, delay: 0.2 }}
@@ -42,7 +62,7 @@ function CamNangDetail({ dataDetail }) {
             CÁC DỰ ÁN KHÁC
           </div>
           <div className="grid grid-cols-1 gap-8 md:grid-cols-3 md:gap-7">
-            {getRandomItems(data, 3).map((item, index) => {
+            {dataRandom?.map((item:any, index) => {
               const dataItemDetail = encodeURIComponent(JSON.stringify(item));
               return (
                 <div key={index}>

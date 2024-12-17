@@ -15,22 +15,25 @@ import {
 import Link from "next/link";
 
 import "./style.css";
+import { getHandBook } from "../api";
+import { message } from "antd";
+import ExpandableParagraph from "@/components/ExpandableParagraph";
 
 const buttons = [
-  { id: "phongThuy", label: "Phong Thủy" },
-  { id: "thietKe", label: "Thiết Kế" },
-  { id: "tinhToanChiPhi", label: "Tính Toán Chi Phí" },
-  { id: "chiaSe", label: "Chia Sẻ" },
+  { id: "fengShui", label: "Phong Thủy" },
+  { id: "design", label: "Thiết Kế" },
+  { id: "costCaculation", label: "Tính Toán Chi Phí" },
+  { id: "share", label: "Chia Sẻ" },
 ];
 
-const PaginatedData = ({ data, itemsPerPage }) => {
+const PaginatedData = ({ itemsPerPage }) => {
   const [currentPage, setCurrentPage] = React.useState(0);
-  const [pageRange, setPageRange] = useState(5); 
-
+  const [pageRange, setPageRange] = useState(5);
+  const [data, setData] = useState([])
   const offset = currentPage * itemsPerPage;
   const currentData = data.slice(offset, offset + itemsPerPage);
 
-  const [activeButton, setActiveButton] = useState("phongThuy");
+  const [activeButton, setActiveButton] = useState("fengShui");
   const pageCount = Math.ceil(data.length / itemsPerPage);
 
   const handlePageClick = (event) => {
@@ -49,15 +52,25 @@ const PaginatedData = ({ data, itemsPerPage }) => {
     setActiveButton(id);
 
     try {
-      const response = await fetch(`/api/${id}`, {
-        method: "GET",
-      });
-      const data = await response.json();
-      console.log(`API Response for ${id}:`, data);
+      const postings = await getHandBook(id);
+      setData(postings);
     } catch (error) {
       console.error(`Error fetching data for ${id}:`, error);
     }
   };
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const postings = await getHandBook(activeButton);
+        setData(postings);
+      } catch (error) {
+        message.error(error?.response?.message)
+      } finally {
+      }
+    };
+    fetchData()
+  }, [])
 
   return (
     <div>
@@ -66,20 +79,19 @@ const PaginatedData = ({ data, itemsPerPage }) => {
           <button
             key={button.id}
             onClick={() => handleClick(button.id)}
-            className={`rounded-xl px-8 py-2 font-semibold transition-colors ${
-              activeButton === button.id
-                ? "bg-blue_main text-white"
-                : "border border-blue_main bg-white text-blue_main hover:border-0 hover:bg-blue_main hover:text-white"
-            }`}
+            className={`rounded-xl px-8 py-2 font-semibold transition-colors ${activeButton === button.id
+              ? "bg-blue_main text-white"
+              : "border border-blue_main bg-white text-blue_main hover:border-0 hover:bg-blue_main hover:text-white"
+              }`}
           >
             {button.label}
           </button>
         ))}
       </div>
       <div className="mt-4 grid grid-cols-1 gap-4 md:mt-8 md:grid-cols-3 md:gap-x-15 md:gap-y-8">
-        {currentData?.map((item, index) => {
+        {currentData?.map((item: any, index) => {
           const dataItemDetail = encodeURIComponent(JSON.stringify(item))
-          return(
+          return (
             <div key={index}>
               <img
                 src={item?.img}
@@ -87,10 +99,16 @@ const PaginatedData = ({ data, itemsPerPage }) => {
                 className="h-45 w-full object-cover"
               />
               <div className="px-4">
-                <div className="pb-2 pt-5 text-lg font-medium text-red_main">
-                  {item?.title}
-                </div>
-                <div>{item?.description}</div>
+                <ExpandableParagraph
+                  text={item?.title}
+                  rows={1}
+                  className="pb-2 pt-5 text-lg font-medium text-red_main"
+                />
+                <ExpandableParagraph
+                  text={item?.description}
+                  rows={3}
+                  className=" text-base font-400 text-grey_main"
+                />
                 <div className="mt-2">
                   <Link
                     href={`/cam-nang/${dataItemDetail}`}

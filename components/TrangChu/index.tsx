@@ -10,6 +10,7 @@ function TrangChu() {
   const [dataRandom, setDataRandom] = useState([])
 
   const router = useRouter()
+
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -103,7 +104,7 @@ function TrangChu() {
             TOP 5 CÔNG CỤ HỖ TRỢ TƯ VẤN THIẾT KẾ NHÀ Ở
           </span>
           <div className="mt-5 grid grid-cols-2  gap-14 md:grid-cols-5">
-            <div className="text-center text-sm">
+            <div className="text-center text-sm" onClick={() => router.push('/ung-dung/tinh-chi-phi')}>
               <img
                 src="/images/trangchu/dutoan.png"
                 alt=""
@@ -115,7 +116,7 @@ function TrangChu() {
                 </span>
               </div>
             </div>
-            <div className="text-center text-sm">
+            <div className="text-center text-sm" onClick={() => router.push('/ung-dung/xem-tuoi-lam-nha')}>
               <img
                 src="/images/trangchu/xemtuoi.jpg"
                 alt=""
@@ -125,7 +126,7 @@ function TrangChu() {
                 <span className="font-medium">ỨNG DỤNG XEM TUỔI LÀM NHÀ</span>
               </div>
             </div>
-            <div className="text-center text-sm">
+            <div className="text-center text-sm" onClick={() => router.push('/ung-dung/thuoc-lo-ban')}>
               <img
                 src="/images/trangchu/loban.png"
                 alt=""
@@ -137,7 +138,7 @@ function TrangChu() {
                 </span>
               </div>
             </div>
-            <div className="text-center text-sm">
+            <div className="text-center text-sm" onClick={() => router.push('/ung-dung/xem-huong-nha-hop-tuoi')}>
               <img
                 src="/images/trangchu/huongnha.png"
                 alt=""
@@ -149,7 +150,7 @@ function TrangChu() {
                 </span>
               </div>
             </div>
-            <div className="text-center text-sm">
+            <div className="text-center text-sm" onClick={() => router.push('/ung-dung/xem-mau-hop-tuoi')}>
               <img
                 src="/images/trangchu/mautuoi.png"
                 alt=""

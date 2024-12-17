@@ -20,19 +20,19 @@ const menuData: Menu[] = [
     path: "/phong-thuy",
     submenu: [
       {
-        id: 31,
+        id: 1,
         title: "Quy trình thực hiện hồ sơ tiêu chí phong thủy",
         newTab: false,
         path: "/phong-thuy/ho-so-tieu-chi",
       },
       {
-        id: 34,
+        id: 2,
         title: "Quy trình thiết kế mặt bằng chuẩn phong thủy hợp công năng",
         newTab: false,
         path: "/phong-thuy/ban-ve-thi-cong",
       },
       {
-        id: 35,
+        id: 3,
         title: "Quy trình thiết kế bản vẽ thi công nhà đẹp chuẩn phong thủy",
         newTab: false,
         path: "/phong-thuy/mat-bang-chuan",
@@ -46,19 +46,19 @@ const menuData: Menu[] = [
     path: "/mau-nha-dep",
     submenu: [
       {
-        id: 31,
+        id: 4,
         title: "Nhà vườn đẹp",
         newTab: false,
         path: "/mau-nha-dep/nha-vuon-dep",
       },
       {
-        id: 34,
+        id: 5,
         title: "Nhà phố đẹp",
         newTab: false,
         path: "/mau-nha-dep/nha-pho-dep",
       },
       {
-        id: 35,
+        id: 6,
         title: "Biệt thự đẹp",
         newTab: false,
         path: "/mau-nha-dep/biet-thu-dep",
@@ -78,31 +78,31 @@ const menuData: Menu[] = [
     path: "/ung-dung",
     submenu: [
       {
-        id: 31,
+        id: 7,
         title: "Tính chi phí",
         newTab: false,
         path: "/ung-dung/tinh-chi-phi",
       },
       {
-        id: 34,
+        id: 8,
         title: "Thước lỗ ban",
         newTab: false,
         path: "/ung-dung/thuoc-lo-ban",
       },
       {
-        id: 35,
+        id:9,
         title: "Xem màu hợp tuổi",
         newTab: false,
         path: "/ung-dung/xem-mau-hop-tuoi",
       },
       {
-        id: 36,
+        id: 10,
         title: "Xem tuổi làm nhà",
         newTab: false,
         path: "/ung-dung/xem-tuoi-lam-nha",
       },
       {
-        id: 37,
+        id: 11,
         title: "Xem hướng nhà hợp tuổi",
         newTab: false,
         path: "/ung-dung/xem-huong-nha-hop-tuoi",
@@ -116,19 +116,19 @@ const menuData: Menu[] = [
     path: "/bang-gia",
     submenu: [
       {
-        id: 31,
+        id: 12,
         title: "Hồ sơ tiêu chí phong thủy",
         newTab: false,
         path: "/bang-gia",
       },
       {
-        id: 34,
+        id: 13,
         title: "Thiết kế mặt bằng phong thủy",
         newTab: false,
         path: "/bang-gia",
       },
       {
-        id: 35,
+        id: 14,
         title: "Thiết kế nhà đẹp chuẩn phong thủy",
         newTab: false,
         path: "/bang-gia",

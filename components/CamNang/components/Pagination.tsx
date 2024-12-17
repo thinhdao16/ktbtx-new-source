@@ -100,9 +100,9 @@ const PaginatedData = ({ itemsPerPage }) => {
               />
               <div className="px-4">
                 <ExpandableParagraph
-                  text={item?.title}
+                text={item?.title}
                   rows={1}
-                  className="pb-2 pt-5 text-lg font-medium text-red_main"
+                  className=" pt-5 text-lg font-medium text-red_main"
                 />
                 <ExpandableParagraph
                   text={item?.description}

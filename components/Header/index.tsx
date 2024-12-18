@@ -36,7 +36,6 @@ const Header = ({ stickyHeight, headerRef }) => {
   });
   return (
     <AnimatedDiv
-      key={stickyHeight?.isSticky}
       transition={{ duration: 0.8, ease: "easeInOut" }}
       animate={{ transform: "translateX(0px)" }}
       className={`sticky left-0 top-0 z-99999 w-full bg-white ${stickyMenu
@@ -47,8 +46,8 @@ const Header = ({ stickyHeight, headerRef }) => {
       <div className="relative mx-auto items-center justify-between " ref={headerRef}>
         <motion.div
           key={stickyHeight?.isSticky}
-          // initial={{ opacity: 0, scale: 0.5 }}
-          // animate={{ opacity: 1, scale: 1 }}
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
           // transition={{
           //   duration: 0.8,
           //   delay: 0.5,
@@ -98,6 +97,14 @@ const Header = ({ stickyHeight, headerRef }) => {
         </motion.div>
 
         <motion.div
+          key={stickyHeight?.isSticky + 1}
+          initial={{ opacity: 0.8, scale: 0.99 }}
+          animate={{ opacity: 1, scale: 1 }}
+          // transition={{
+          //   duration: 0.8,
+          //   delay: 0.5,
+          //   ease: [0, 0.71, 0.2, 1.01],
+          // }}
           transition={{ duration: 0.3, ease: "easeInOut" }}
           className={`invisible  font-500  h-0 w-full items-center justify-center bg-blue_main md:px-8 xl:visible xl:flex xl:h-auto  xl:w-full 2xl:px-0 ${navigationOpen &&
             "navbar !visible mt-4 h-auto max-h-[400px] rounded-md  p-7.5 shadow-solid-5 dark:bg-blacksection xl:h-auto xl:p-0 xl:shadow-none xl:dark:bg-transparent"

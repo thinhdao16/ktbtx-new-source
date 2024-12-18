@@ -19,7 +19,7 @@ const AnimatedDiv: React.FC<AnimatedDivProps> = ({
   whileInView = "visible",
   transition = { duration: 1, delay: 0.1 },
   viewport = { once: true },
-  ...restProps // Các props khác từ MotionProps
+  ...restProps 
 }) => {
   return (
     <motion.div
@@ -30,7 +30,7 @@ const AnimatedDiv: React.FC<AnimatedDivProps> = ({
       viewport={viewport}
       className={`animate_top ${className}`}
       style={style}
-      {...restProps} // Truyền các props khác xuống motion.div
+      {...restProps} 
     >
       {children}
     </motion.div>

@@ -4,8 +4,9 @@ import { useEffect, useState } from "react";
 
 import menuData from "./menuData";
 import AnimatedDiv from "../AnimatedDiv";
+import { motion } from "framer-motion";
 
-const Header = () => {
+const Header = ({ stickyHeight, headerRef }) => {
   const [navigationOpen, setNavigationOpen] = useState(false);
   const [dropdownToggler, setDropdownToggler] = useState(false);
   const [stickyMenu, setStickyMenu] = useState(false);
@@ -33,16 +34,28 @@ const Header = () => {
   useEffect(() => {
     window.addEventListener("scroll", handleStickyMenu);
   });
-
   return (
-    <AnimatedDiv transition={{ duration: 0.8, delay: 0.2 }}
-      className={`sticky left-0 top-0 z-99999 w-full pt-7 ${stickyMenu
-        ? "bg-white !pt-7 shadow transition duration-100 dark:bg-black"
+    <AnimatedDiv
+      key={stickyHeight?.isSticky}
+      transition={{ duration: 0.8, ease: "easeInOut" }}
+      animate={{ transform: "translateX(0px)" }}
+      className={`sticky left-0 top-0 z-99999 w-full bg-white ${stickyMenu
+        ? "bg-white  shadow transition duration-100 dark:bg-black"
         : ""
         }`}
     >
-      <div className="relative mx-auto items-center justify-between ">
-        <div className="mb-1 flex justify-between px-4 md:justify-center md:px-8 2xl:px-0">
+      <div className="relative mx-auto items-center justify-between " ref={headerRef}>
+        <motion.div
+          key={stickyHeight?.isSticky}
+          // initial={{ opacity: 0, scale: 0.5 }}
+          // animate={{ opacity: 1, scale: 1 }}
+          // transition={{
+          //   duration: 0.8,
+          //   delay: 0.5,
+          //   ease: [0, 0.71, 0.2, 1.01],
+          // }}
+          transition={{ duration: 0.3, ease: "easeInOut" }}
+          className={`mb-1 flex justify-between px-4 md:justify-center md:px-8 2xl:px-0 ${!stickyHeight?.isSticky ? "" : "static md:hidden"}`}>
           <a href="/">
             <img
               src="/images/logo/logo.png"
@@ -50,8 +63,6 @@ const Header = () => {
               className="w-72 dark:hidden"
             />
           </a>
-
-          {/* <!-- Hamburger Toggle BTN --> */}
           <button
             aria-label="hamburger Toggler"
             className="block xl:hidden"
@@ -84,9 +95,10 @@ const Header = () => {
               </span>
             </span>
           </button>
-        </div>
+        </motion.div>
 
-        <div
+        <motion.div
+          transition={{ duration: 0.3, ease: "easeInOut" }}
           className={`invisible  font-500  h-0 w-full items-center justify-center bg-blue_main md:px-8 xl:visible xl:flex xl:h-auto  xl:w-full 2xl:px-0 ${navigationOpen &&
             "navbar !visible mt-4 h-auto max-h-[400px] rounded-md  p-7.5 shadow-solid-5 dark:bg-blacksection xl:h-auto xl:p-0 xl:shadow-none xl:dark:bg-transparent"
             }`}
@@ -163,7 +175,7 @@ const Header = () => {
               ))}
             </ul>
           </nav>
-        </div>
+        </motion.div>
       </div>
     </AnimatedDiv>
   );

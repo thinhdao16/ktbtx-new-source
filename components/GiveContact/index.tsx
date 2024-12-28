@@ -18,7 +18,7 @@ function GiveContact() {
             </div>
             <div>
               Nếu có bất kỳ thắc mắc nào về thiết kế phong thủy nhà ở,vui lòng
-              gửi thông tin cho chúng tôi ể ược tư vấn
+              gửi thông tin cho chúng tôi để được tư vấn
             </div>
             <div className="mb-5 mt-3">
               <input

@@ -24,7 +24,7 @@ function HoSoTieuChi() {
           {steps.map((step, i) => (
             <div>
               <div className="grid grid-cols-11 items-center">
-                <div className="col-span-2 text-lg font-semibold text-red_main md:col-span-1 md:text-3xl">
+                <div className="col-span-2 text-lg font-semibold text-red_main md:col-span-1 md:text-2xl">
                   {step.head}
                 </div>
                 <div className="col-span-1 flex justify-center">

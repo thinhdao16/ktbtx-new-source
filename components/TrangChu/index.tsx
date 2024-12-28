@@ -35,12 +35,12 @@ function TrangChu() {
           <div className="flex gap-8">
             <button
               onClick={() => router.push('/lien-he')}
-              className="bg-red_main px-11 py-3 text-lg font-semibold text-white md:text-2xl">
+              className="bg-red_main px-11 py-3 text-lg font-semibold text-white md:text-2xl hover:bg-white hover:text-red_main">
               TƯ VẤN
             </button>
             <button
               onClick={() => router.push('/bang-gia')}
-              className="bg-white px-11 py-3 text-lg font-semibold text-red_main md:text-2xl">
+              className="bg-white px-11 py-3 text-lg font-semibold text-red_main md:text-2xl hover:bg-red_main hover:text-white">
               BẢNG GIÁ
             </button>
           </div>
@@ -167,56 +167,47 @@ function TrangChu() {
         <span className=" text-4xl font-medium text-red_main ">
           VÌ SAO CHỌN BẦU TRỜI XANH
         </span>
-        <div className="mt-5 grid grid-cols-1 gap-12 md:grid-cols-3">
+        <div className="mt-5 grid grid-cols-1 gap-12 md:grid-cols-3 text-justify">
           <div className="flex flex-col items-center justify-center gap-4">
             <div className="h-22 w-22 rounded-full bg-blue_main"></div>
-            <ExpandableParagraph
-              text={
-                'ĐỘI NGŨ GIÀU KINH NGHIỆM'
-              }
-              rows={1}
-              className="text-lg font-medium text-red_main"
-            />
-            <ExpandableParagraph
-              text=
-              'Đội ngũ chuyên gia của chúng tôi sở hữu nhiều năm kinh nghiệm trong lĩnh vực kiến trúc, mang đến những giải pháp tối ưu và sáng tạo cho mọi dự án.'
-              rows={3}
+            <div
+              className="text-lg font-medium text-red_main h-14"
+            >
+              ĐỘI NGŨ GIÀU KINH NGHIỆM 
+            </div>
+            <div
               className="text-base text-grey_main font-400"
-            />
+            >
+              Đội ngũ chuyên gia của chúng tôi sở hữu nhiều năm kinh nghiệm trong lĩnh vực kiến trúc, mang đến những giải pháp tối ưu.
+            </div>
+          </div>
+          <div className=" flex flex-col items-center justify-center gap-4">
+            <div className="h-22 w-22 rounded-full bg-blue_main"></div>
+            <div
+              className="text-lg font-medium text-red_main"
+            >
+              KIẾN THỨC PHONG THỦY CHUYÊN SÂU
+            </div>
+            <div
+              className="text-base text-grey_main font-400"
+            >
+              Chúng tôi am hiểu sâu sắc về phong thủy, giúp các công trình không  chỉ đẹp mắt mà còn hài hòa với yếu tố tâm linh và văn hóa.
+
+            </div>
           </div>
           <div className="flex flex-col items-center justify-center gap-4">
             <div className="h-22 w-22 rounded-full bg-blue_main"></div>
-
-            <ExpandableParagraph
-              text={
-                'KIẾN THỨC PHONG THỦY CHUYÊN SÂU'
-              }
-              rows={1}
+            <div
               className="text-lg font-medium text-red_main"
-            />
-            <ExpandableParagraph
-              text=
-              ' Chúng tôi am hiểu sâu sắc về phong thủy, giúp các công trình không  chỉ đẹp mắt mà còn hài hòa với yếu tố tâm linh và văn hóa.'
-              rows={3}
+            >
+              KIẾN THỨC PHONG THỦY CHUYÊN SÂU HỖ TRỢ LINH HOẠT
+            </div>
+            <div
               className="text-base text-grey_main font-400"
-            />
-          </div>
-          <div className="flex flex-col items-center justify-center gap-4">
-            <div className="h-22 w-22 rounded-full bg-blue_main"></div>
-
-            <ExpandableParagraph
-              text={
-                'KIẾN THỨC PHONG THỦY CHUYÊN SÂU HỖ TRỢ LINH HOẠT'
-              }
-              rows={1}
-              className="text-lg font-medium text-red_main"
-            />
-            <ExpandableParagraph
-              text=' Với phong cách làm việc chuyên nghiệp và linh hoạt, chúng tôi luôn
-              sẵn sàng hỗ trợ khách hàng trong mọi giai đoạn của dự án.'
-              rows={3}
-              className="text-base text-grey_main font-400"
-            />
+            >
+              Với phong cách làm việc chuyên nghiệp và linh hoạt, chúng tôi luôn
+              sẵn sàng hỗ trợ khách hàng trong mọi giai đoạn của dự án.
+            </div>
           </div>
         </div>
       </div>
@@ -265,9 +256,9 @@ function TrangChu() {
           <div className="mt-5 grid grid-cols-2  gap-14 md:grid-cols-4">
             <Link href="/bang-gia" className="text-center ">
               <img
-                src="/images/trangchu/dutoan.png"
+                src="/images/trangchu/181225-h1.jpg"
                 alt=""
-                className="mb-3 rounded-3xl"
+                className="mb-3 rounded-3xl aspect-square object-cover"
               />
               <div className="px-6">
                 <span className="font-medium">PHONG THỦY</span>
@@ -275,9 +266,9 @@ function TrangChu() {
             </Link>
             <Link href="/bang-gia" className="text-center ">
               <img
-                src="/images/trangchu/xemtuoi.jpg"
+                src="/images/trangchu/181226-h2.jpg"
                 alt=""
-                className="mb-3 rounded-3xl"
+                className="mb-3 rounded-3xl aspect-square object-cover"
               />
               <div className="px-6">
                 <span className="font-medium">THIẾT KẾ</span>
@@ -285,9 +276,9 @@ function TrangChu() {
             </Link>
             <Link href="/bang-gia" className="text-center ">
               <img
-                src="/images/trangchu/loban.png"
+                src="/images/trangchu/181226-h3.jpg"
                 alt=""
-                className="mb-3 rounded-3xl"
+                className="mb-3 rounded-3xl aspect-square object-cover"
               />
               <div className="px-6">
                 <span className="font-medium">PHONG THỦY</span>
@@ -295,9 +286,9 @@ function TrangChu() {
             </Link>
             <Link href="/bang-gia" className="text-center ">
               <img
-                src="/images/trangchu/huongnha.png"
+                src="/images/trangchu/181226-h4.jpg"
                 alt=""
-                className="mb-3 rounded-3xl"
+                className="mb-3 rounded-3xl aspect-square object-cover"
               />
               <div className="px-6 ">
                 <span className="font-medium">PHONG THỦY</span>

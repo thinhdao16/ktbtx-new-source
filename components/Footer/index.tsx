@@ -30,10 +30,8 @@ const Footer = () => {
               >
                 <a href="/">
                   <div className="flex h-20 w-20 items-center justify-center rounded-full bg-white p-5 md:mt-8 md:h-65 md:w-65">
-                    <Image
-                      width={110}
-                      height={80}
-                      src="/images/logo/logo-light.svg"
+                    <img
+                      src="/images/logo/logo-vertical.png"
                       alt="Logo"
                       className="dark:hidden"
                     />

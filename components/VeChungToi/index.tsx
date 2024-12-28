@@ -11,7 +11,7 @@ function VeChungToi() {
         title="VỀ CHÚNG TÔI"
         breadcrumbs={[
           { label: "TRANG CHỦ", href: "/" },
-          { label: "CẨM NANG", href: "/vechungtoi" },
+          { label: "VỀ CHÚNG TÔI", href: "/vechungtoi" },
         ]}
         backgroundImage="/images/vechungtoi/main.jpg"
       />

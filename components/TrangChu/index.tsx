@@ -253,7 +253,7 @@ function TrangChu() {
       <div className="flex justify-center bg-blue_main py-10 text-white">
         <div className="flex max-w-c-1154 flex-col items-center justify-center px-4">
           <span className="text-4xl font-medium">BẢNG GIÁ</span>
-          <div className="mt-5 grid grid-cols-2  gap-14 md:grid-cols-4">
+          <div className="mt-5 grid grid-cols-2  gap-14 md:grid-cols-3 uppercase text-xl">
             <Link href="/bang-gia" className="text-center ">
               <img
                 src="/images/trangchu/181225-h1.jpg"
@@ -261,7 +261,7 @@ function TrangChu() {
                 className="mb-3 rounded-3xl aspect-square object-cover"
               />
               <div className="px-6">
-                <span className="font-medium">PHONG THỦY</span>
+                <span className="font-medium">Hồ sơ tiêu chí phong thủy</span>
               </div>
             </Link>
             <Link href="/bang-gia" className="text-center ">
@@ -271,7 +271,7 @@ function TrangChu() {
                 className="mb-3 rounded-3xl aspect-square object-cover"
               />
               <div className="px-6">
-                <span className="font-medium">THIẾT KẾ</span>
+                <span className="font-medium">Thiết kế mặt bằng</span>
               </div>
             </Link>
             <Link href="/bang-gia" className="text-center ">
@@ -281,19 +281,10 @@ function TrangChu() {
                 className="mb-3 rounded-3xl aspect-square object-cover"
               />
               <div className="px-6">
-                <span className="font-medium">PHONG THỦY</span>
+                <span className="font-medium">Thiết kế nhà đẹp chuẩn phong thủy</span>
               </div>
             </Link>
-            <Link href="/bang-gia" className="text-center ">
-              <img
-                src="/images/trangchu/181226-h4.jpg"
-                alt=""
-                className="mb-3 rounded-3xl aspect-square object-cover"
-              />
-              <div className="px-6 ">
-                <span className="font-medium">PHONG THỦY</span>
-              </div>
-            </Link>
+            
           </div>
         </div>
       </div>

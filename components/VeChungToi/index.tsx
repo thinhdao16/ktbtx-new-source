@@ -24,7 +24,7 @@ function VeChungToi() {
             <div className="text-xl font-medium text-red_main md:text-3xl">
               LỊCH SỬ HÌNH THÀNH
             </div>
-            <div className="pb-4 pt-1 text-3xl font-semibold text-blue_main md:text-5xl">
+            <div className="pb-4 pt-2 text-3xl font-semibold text-blue_main md:text-5xl">
               BẦU TRỜI XANH
             </div>
             <div className="pb-3">

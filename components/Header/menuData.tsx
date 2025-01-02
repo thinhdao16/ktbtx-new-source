@@ -113,7 +113,7 @@ const menuData: Menu[] = [
     id: 5,
     title: "BẢNG GIÁ",
     newTab: false,
-    path: "/bang-gia",
+    path: "",
     submenu: [
       {
         id: 12,

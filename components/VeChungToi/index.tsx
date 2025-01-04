@@ -75,7 +75,7 @@ function VeChungToi() {
         </span>
         <div className="mt-5 grid grid-cols-1 gap-12 md:grid-cols-3">
           <div className="flex flex-col items-center justify-center gap-4">
-            <div className="h-22 w-22 rounded-full bg-blue_main"></div>
+          <img className="h-22 w-22 rounded-full object-cover " src="/images/vechungtoi/responsibility.jpg" alt="" />
             <span className="text-lg font-medium text-red_main">
               TRÁCH NHIỆM
             </span>
@@ -84,19 +84,19 @@ function VeChungToi() {
             </p>
           </div>
           <div className="flex flex-col items-center justify-center gap-4">
-            <div className="h-22 w-22 rounded-full bg-blue_main"></div>
+          <img className="h-22 w-22 rounded-full object-cover " src="/images/vechungtoi/reputation.png" alt="" />
             <span className="text-lg font-medium text-red_main">UY TÍN</span>
             <p>
             Uy tín là nền tảng cho mọi hoạt động của chúng tôi. Chúng tôi luôn giữ vững lời hứa, thực hiện cam kết và mang đến giá trị thực sự cho khách hàng, đối tác và cộng đồng. Mỗi bước tiến đều được xây dựng trên sự tin cậy và chất lượng, khẳng định vị thế và sự khác biệt của chúng tôi.
             </p>
           </div>
           <div className="flex flex-col items-center justify-center gap-4">
-            <div className="h-22 w-22 rounded-full bg-blue_main"></div>
+          <img className="h-22 w-22 rounded-full object-cover " src="/images/vechungtoi/support.jpg" alt="" />
             <span className="text-lg font-medium text-red_main">
               HỖ TRỢ LINH HOẠT
             </span>
             <p>
-            Chúng tôi cam kết mang đến sự hỗ trợ nhanh chóng, linh hoạt và hiệu quả, đáp ứng mọi nhu cầu của khách hàng một cách tốt nhất. Với tinh thần sẵn sàng lắng nghe và đồng hành, chúng tôi luôn tìm kiếm giải pháp tối ưu để đảm bảo sự hài lòng và tin cậy trong từng trải nghiệm dịch vụ.
+            Chúng tôi cam kết mang đến sự hỗ trợ nhanh chóng, linh hoạt và hiệu quả, đáp ứng mọi nhu cầu của khách hàng một cách tốt nhất. Với tinh thần sẵn sàng lắng nghe và đồng hành, chúng tôi luôn tìm kiếm giải pháp tối ưu để đảm bảo sự hài lòng và tin cậy trong từng trải nghiệm.
             </p>
           </div>
         </div>

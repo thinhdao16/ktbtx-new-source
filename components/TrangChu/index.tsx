@@ -169,11 +169,11 @@ function TrangChu() {
         </span>
         <div className="mt-5 grid grid-cols-1 gap-12 md:grid-cols-3 text-justify">
           <div className="flex flex-col items-center justify-center gap-4">
-            <div className="h-22 w-22 rounded-full bg-blue_main"></div>
+          <img className="h-22 w-22 rounded-full object-cover " src="/images/trangchu/team-exp.jpg" alt="" />
             <div
               className="text-lg font-medium text-red_main h-14"
             >
-              ĐỘI NGŨ GIÀU KINH NGHIỆM 
+              ĐỘI NGŨ GIÀU KINH NGHIỆM
             </div>
             <div
               className="text-base text-grey_main font-400"
@@ -182,9 +182,9 @@ function TrangChu() {
             </div>
           </div>
           <div className=" flex flex-col items-center justify-center gap-4">
-            <div className="h-22 w-22 rounded-full bg-blue_main"></div>
+          <img className="h-22 w-22 rounded-full object-cover " src="/images/trangchu/know-feng-shui.jpg" alt="" />
             <div
-              className="text-lg font-medium text-red_main"
+              className="text-lg font-medium text-red_main text-center"
             >
               KIẾN THỨC PHONG THỦY CHUYÊN SÂU
             </div>
@@ -196,9 +196,9 @@ function TrangChu() {
             </div>
           </div>
           <div className="flex flex-col items-center justify-center gap-4">
-            <div className="h-22 w-22 rounded-full bg-blue_main"></div>
+            <img className="h-22 w-22 rounded-full object-cover " src="/images/trangchu/know-feng-shui-many.jpg" alt="" />
             <div
-              className="text-lg font-medium text-red_main"
+              className="text-lg font-medium text-red_main text-center"
             >
               KIẾN THỨC PHONG THỦY CHUYÊN SÂU HỖ TRỢ LINH HOẠT
             </div>
@@ -284,7 +284,7 @@ function TrangChu() {
                 <span className="font-medium">Thiết kế nhà đẹp chuẩn phong thủy</span>
               </div>
             </Link>
-            
+
           </div>
         </div>
       </div>

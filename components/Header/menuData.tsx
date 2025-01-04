@@ -90,7 +90,7 @@ const menuData: Menu[] = [
         path: "/ung-dung/thuoc-lo-ban",
       },
       {
-        id:9,
+        id: 9,
         title: "Xem màu hợp tuổi",
         newTab: false,
         path: "/ung-dung/xem-mau-hop-tuoi",
@@ -113,25 +113,25 @@ const menuData: Menu[] = [
     id: 5,
     title: "BẢNG GIÁ",
     newTab: false,
-    path: "",
+    path: "/bang-gia",
     submenu: [
       {
         id: 12,
         title: "Hồ sơ tiêu chí phong thủy",
         newTab: false,
-        path: "/bang-gia",
+        path: "/bang-gia/content",
       },
       {
         id: 13,
         title: "Thiết kế mặt bằng phong thủy",
         newTab: false,
-        path: "/bang-gia",
+        path: "/bang-gia/content",
       },
       {
         id: 14,
         title: "Thiết kế nhà đẹp chuẩn phong thủy",
         newTab: false,
-        path: "/bang-gia",
+        path: "/bang-gia/content",
       },
       // {
       //   id: 31,
